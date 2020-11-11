@@ -1,0 +1,22 @@
+<div class="center">
+    <mat-card class="example-card">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>REGISTRAR</mat-card-title>
+            <mat-card-subtitle>CICLOS</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-form-field appearance="outline">
+                <mat-label>Nombre</mat-label>
+                <input matInput [(ngModel)]="cicloModel.nombre" placeholder="Ingresar Ciclo" name="nombre">
+                <mat-icon matSuffix></mat-icon>
+            </mat-form-field>
+        </mat-card-content>
+           
+        <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="create()">REGISTRAR</button>
+            <a mat-raised-button routerLink="/listar" color="warn">CANCELAR</a>
+        </mat-card-actions>
+    </mat-card>
+
+</div>
